@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.films{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: antiquewhite;
+
+    display: grid;
+    grid-gap: 30px;
+    position: relative;
+}
+
+.films > div {
+    padding: 30px;
+}
+
+.films_top {
+    width: 35%;
+    margin: 70px auto 0;
+    border: 1px solid #939393;
+    border-radius: 5px;
+    
+}
+
+.films_top h2 {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+}
+
+.films_button {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.films_message h3 {
+    text-align: center;
+}
+
+.films_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.films_item {
+    display: flex;
+    width: calc(30%);
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 5px;
+    
+}
+
+.films_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7.5px;
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+input, button, select {
+    padding: 7.5px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #c8c8c8;
+}
+
+button:hover {
+    background-color: rgb(139, 142, 142);
+    cursor: pointer;
+}
+
+button:active {
+    color: #fff;
+}
+
+input:focus, select:focus {
+    background-color: #c3c3c3;
+}
+
+/* .films_pagination {
+    width: 30%;
+    overflow: hidden;
+} */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 200px auto;
+}
+
+.pagination_items {
+    list-style-type: none;
+    display: flex;
+    column-gap: 5px;
+}
+
+.pagination_item {
+    padding: 10px 12px;
+    background-color: #cfcfcf;
+    cursor: pointer;
+}
+
+.pagination_item--active {
+    background-color: #555;
+    color: #fff;
+    outline: 2px solid #fff;
+    outline-offset: -4px;
+}
+
+.info {
+    margin-top: 80px;
+    border: 1px solid #c9c9c9;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+}
+
+.film_details h2 {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.films_description p span {
+    margin-left: 20px;
+}
+
